@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { provide, ref } from 'vue';
+import { provide, computed, ref } from 'vue';
 
 export default {
     props: {
