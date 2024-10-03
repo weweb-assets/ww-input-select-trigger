@@ -15,7 +15,13 @@ export default {
     setup(props) {
         provide('_wwSelectInTrigger', ref(true));
 
-        wwLib.wwElement.useRegisterElementLocalContext('selectTrigger', { placeholder: props.content.placeholder }, {});
+        const placeholder = computed(() => props.content.placeholder);
+
+        const data = ref({
+            placeholder,
+        });
+
+        wwLib.wwElement.useRegisterElementLocalContext('selectTrigger', data, {});
     },
 };
 </script>
