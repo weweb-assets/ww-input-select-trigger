@@ -14,13 +14,11 @@ export default {
                 ],
             },
             defaultValue: 'simple',
-            section: 'settings',
         },
         placeholder: {
             label: 'Placeholder',
             type: 'Text',
             defaultValue: 'Select an option',
-            section: 'settings',
         },
         slot: {
             hidden: true,
