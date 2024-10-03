@@ -3,18 +3,14 @@ export default {
         label: 'Select Trigger',
         icon: 'select',
     },
+    inherit: {
+        type: 'ww-layout',
+    },
+    options: {
+        autoByContent: true,
+        displayAllowedValues: ['flex', 'grid', 'inline-flex', 'inline-grid'],
+    },
     properties: {
-        layout: {
-            label: 'Layout',
-            type: 'TextSelect',
-            options: {
-                options: [
-                    { value: 'simple', label: 'Simple' },
-                    { value: 'free', label: 'Free layout' },
-                ],
-            },
-            defaultValue: 'simple',
-        },
         placeholder: {
             label: 'Placeholder',
             type: 'Text',
