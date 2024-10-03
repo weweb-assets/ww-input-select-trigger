@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import { provide, ref } from 'vue';
+
 export default {
     props: {
         content: { type: Object, required: true },
@@ -10,8 +12,11 @@ export default {
         wwEditorState: { type: Object, required: true },
         /* wwEditor:end */
     },
-    emits: ['triggerClick'],
-    setup(props, { emit }) {},
+    setup(props) {
+        provide('_wwSelectInTrigger', ref(true));
+
+        wwLib.wwElement.useRegisterElementLocalContext('selectTrigger', { placeholder: props.content.placeholder }, {});
+    },
 };
 </script>
 
