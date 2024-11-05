@@ -15,6 +15,12 @@ export default {
             label: 'Placeholder',
             type: 'Text',
             defaultValue: 'Select an option',
+            /* wwEditor:start */
+            propertyHelp: {
+                tooltip:
+                    'The placeholder text for the select. Available in the formula explorer in the Trigger element.',
+            },
+            /* wwEditor:end */
         },
         slot: {
             hidden: true,
