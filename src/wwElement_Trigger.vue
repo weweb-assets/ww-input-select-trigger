@@ -21,7 +21,11 @@ export default {
             placeholder,
         });
 
-        wwLib.wwElement.useRegisterElementLocalContext('selectTrigger', data, {});
+        const markdown = `### Select Trigger local informations
+
+- \`placeholder\`: The placeholder text for the select trigger.`;
+
+        wwLib.wwElement.useRegisterElementLocalContext('selectTrigger', data, {}, markdown);
     },
 };
 </script>
