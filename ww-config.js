@@ -2,14 +2,35 @@ export default {
     editor: {
         label: 'Select Trigger',
         icon: 'select',
-        hint: {
-            header: 'You are on a Trigger element',
-            text: 'If you want to edit the Select element, you can select it here.',
-            button: {
-                text: 'Select element',
-                action: 'selectParentElement',
+        hint: [
+            {
+                section: 'style',
+                header: 'You are on a Trigger element',
+                text: 'If you want to edit the Select element, you can select it here.',
+                button: {
+                    text: 'Select element',
+                    action: 'selectParentElement',
+                },
             },
-        },
+            {
+                section: 'settings',
+                header: 'You are on a Trigger element',
+                text: 'If you want to edit the Select element, you can select it here.',
+                button: {
+                    text: 'Select element',
+                    action: 'selectParentElement',
+                },
+            },
+            {
+                section: 'workflows',
+                header: 'You are on a Trigger element',
+                text: 'If you want to edit the Select element, you can select it here.',
+                button: {
+                    text: 'Select element',
+                    action: 'selectParentElement',
+                },
+            },
+        ],
     },
     inherit: {
         type: 'ww-layout',

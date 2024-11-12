@@ -30,8 +30,7 @@ export default {
     methods: {
         /* wwEditor:start */
         selectParentElement() {
-            const parentUid = wwLib.selectParentByFlag(this.$el, 'ww-select');
-            console.log('parentUid', parentUid);
+            wwLib.selectParentByFlag(this.$el, 'ww-select');
         },
         /* wwEditor:end */
     },
