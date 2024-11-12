@@ -27,6 +27,14 @@ export default {
 
         wwLib.wwElement.useRegisterElementLocalContext('selectTrigger', data, {}, markdown);
     },
+    methods: {
+        /* wwEditor:start */
+        selectParentElement() {
+            const parentUid = wwLib.selectParentByFlag(this.$el, 'ww-select');
+            console.log('parentUid', parentUid);
+        },
+        /* wwEditor:end */
+    },
 };
 </script>
 
