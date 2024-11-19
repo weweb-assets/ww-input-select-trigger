@@ -13,7 +13,7 @@ export default {
         /* wwEditor:end */
     },
     setup(props) {
-        provide('_wwSelectInTrigger', ref(true));
+        provide('_wwSelect:isInTrigger', ref(true));
 
         const placeholder = computed(() => props.content.placeholder);
 
