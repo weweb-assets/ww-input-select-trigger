@@ -4,6 +4,9 @@
         "type": "git",
         "url": "https://github.com/weweb-assets/ww-select-trigger"
     },
+    "weweb": {
+        "componentPath": "./src/wwElement_Trigger.vue"
+    },
     "version": "1.0.0",
     "scripts": {
         "build": "weweb build",
